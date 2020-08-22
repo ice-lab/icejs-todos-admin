@@ -14,8 +14,10 @@ class AuthController extends Controller {
     const { name, password } = formData;
 
     const user = await app.model.Admin.findAll({
-      username: name,
-      password,
+      'where': {
+        username: name,
+        password,
+      }
     });
 
     let code = 2000;
