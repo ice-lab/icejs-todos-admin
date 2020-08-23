@@ -1,14 +1,13 @@
 {
-  "name": "showcase",
+  "name": "icejs-todos-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "icejs-todos-server",
   "private": true,
   "egg": {
     "declarations": true
   },
   "dependencies": {
     "egg": "^2.15.1",
-    "egg-mysql": "^3.0.0",
     "egg-scripts": "^2.11.0",
     "egg-sequelize": "^5.2.2",
     "mysql2": "^2.1.0"
