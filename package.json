@@ -1,48 +1,27 @@
 {
-  "name": "icejs-todos-server",
+  "name": "icejs-todos",
   "version": "1.0.0",
-  "description": "icejs-todos-server",
-  "private": true,
-  "egg": {
-    "declarations": true
-  },
-  "dependencies": {
-    "egg": "^2.15.1",
-    "egg-scripts": "^2.11.0",
-    "egg-sequelize": "^5.2.2",
-    "mysql2": "^2.1.0"
-  },
-  "devDependencies": {
-    "autod": "^3.0.1",
-    "autod-egg": "^1.1.0",
-    "egg-bin": "^4.11.0",
-    "egg-ci": "^1.11.0",
-    "egg-mock": "^3.21.0",
-    "eslint": "^5.13.0",
-    "eslint-config-egg": "^7.1.0"
-  },
-  "engines": {
-    "node": ">=10.0.0"
-  },
+  "description": "icejs todos 后台管理系统",
+  "main": "index.js",
   "scripts": {
-    "start": "egg-scripts start --daemon --title=egg-server-showcase",
-    "stop": "egg-scripts stop --title=egg-server-showcase",
-    "dev": "egg-bin dev",
-    "debug": "egg-bin debug",
-    "test": "npm run lint -- --fix && npm run test-local",
-    "test-local": "egg-bin test",
-    "cov": "egg-bin cov",
-    "lint": "eslint .",
-    "ci": "npm run lint && npm run cov",
-    "autod": "autod"
-  },
-  "ci": {
-    "version": "10"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "npm run install:server & npm run install:client",
+    "install:server": "cd server && npm install",
+    "install:client": "cd client && npm install"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/ice-lab/miniapp-admin.git"
   },
+  "keywords": [
+    "icejs",
+    "todos",
+    "eggjs"
+  ],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ice-lab/miniapp-admin/issues"
+  },
+  "homepage": "https://github.com/ice-lab/miniapp-admin#readme"
 }

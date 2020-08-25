@@ -1,14 +1,40 @@
-logs/
-npm-debug.log
-yarn-error.log
-node_modules/
-package-lock.json
-yarn.lock
-coverage/
-.idea/
-run/
-.DS_Store
-*.sw*
-*.un~
-typings/
-.nyc_output/
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+##################### client #####################
+# dependencies
+client/node_modules/
+
+# production
+client/build/
+client/dist/
+client/tmp/
+client/lib/
+
+# misc
+client/.idea/
+client/.happypack
+client/.DS_Store
+client/*.swp
+client/*.dia~
+client/.ice
+
+client/npm-debug.log*
+client/yarn-debug.log*
+client/yarn-error.log*
+client/index.module.scss.d.ts
+
+##################### server #####################
+server/logs/
+server/npm-debug.log
+server/yarn-error.log
+server/node_modules/
+server/package-lock.json
+server/yarn.lock
+server/coverage/
+server/.idea/
+server/run/
+server/.DS_Store
+server/*.sw*
+server/*.un~
+server/typings/
+server/.nyc_output/
