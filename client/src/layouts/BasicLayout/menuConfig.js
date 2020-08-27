@@ -6,7 +6,7 @@ const asideMenuConfig = [
     icon: 'chart-pie'
   },
   {
-    name: 'TODO',
+    name: '代办事项',
     path: '/todos',
     icon: 'calendar'
   },

@@ -63,8 +63,7 @@ function BasicLayout({ children }) {
       >
         <Shell.Branding>
           <Logo
-            image="https://img.alicdn.com/tfs/TB1.ZBecq67gK0jSZFHXXa9jVXa-904-826.png"
-            text="icejs todos"
+            text="icejs todos 后台管理系统"
           />
         </Shell.Branding>
         <Shell.Navigation

@@ -10,9 +10,6 @@ const { Popup } = Overlay;
 
 const UserProfile = ({ name, avatar }) => (
   <div className={styles.profile}>
-    <div className={styles.avatar}>
-      <Avatar src={avatar} alt="用户头像" />
-    </div>
     <div className={styles.content}>
       <h4>{name}</h4>
     </div>
@@ -45,7 +42,6 @@ const HeaderAvatar = props => {
     <Popup
       trigger={
         <div className={styles.headerAvatar}>
-          <Avatar size="small" src={avatar} alt="用户头像" />
           <span
             style={{
               marginLeft: 10,
@@ -71,7 +67,6 @@ const HeaderAvatar = props => {
 };
 
 HeaderAvatar.defaultProps = {
-  name: 'user',
-  avatar: 'https://img.alicdn.com/tfs/TB1.ZBecq67gK0jSZFHXXa9jVXa-904-826.png',
+  name: '管理员'
 };
 export default HeaderAvatar;
