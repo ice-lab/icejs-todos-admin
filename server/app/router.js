@@ -41,4 +41,7 @@ module.exports = app => {
   router.post(`${ROUTER_PREFIX}${MINIAPP_PREFIX}/todos/edit`, controller.miniapp.todos.edit);
   router.get(`${ROUTER_PREFIX}${MINIAPP_PREFIX}/todos/del/:id`, controller.miniapp.todos.del);
   router.get(`${ROUTER_PREFIX}${MINIAPP_PREFIX}/todos/view/:id`, controller.miniapp.todos.view);
+
+  // users
+  router.post(`${ROUTER_PREFIX}${MINIAPP_PREFIX}/user/edit`, controller.miniapp.user.edit);
 };
